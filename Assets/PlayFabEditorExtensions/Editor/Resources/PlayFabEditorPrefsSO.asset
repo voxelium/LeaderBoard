@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d0199c11aa6f514784c5c69cd8378d8, type: 3}
+  m_Name: PlayFabEditorPrefsSO
+  m_EditorClassIdentifier: 
+  DevAccountEmail: supertema@gmail.com
+  DevAccountToken: 3a1zxp4srao9otba5abcnh5bi5nafsget3ceqy85m8wrmhu4oe68h8qkx9qcpqhkmrqexuqac8y44edx3uzqnxaxiw1oaizxfakjsgdz5wzdo3o49zczwffgwb6jr14nuy87thremquew6dbdb5shru14zewaf6jdwn31tu6dzh8dh6fxf48on6tg9tnkefop8efjig1
+  SelectedStudio: Voxelium Games
+  SdkPath: Assets/PlayFabSDK
+  EdExPath: 
+  LocalCloudScriptPath: 
+  PanelIsShown: 0
+  curMainMenuIdx: 0
+  curSubMenuIdx: 0
