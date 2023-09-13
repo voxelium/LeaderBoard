@@ -9,6 +9,7 @@ using TMPro;
 public class PlayfabManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI clicksText;
+    [SerializeField] private TextMeshProUGUI leadersText;
     private int clicksNum = 0;
 
     private void Start()
@@ -83,6 +84,7 @@ public class PlayfabManager : MonoBehaviour
     {
         foreach (var item in result.Leaderboard)
         {
+            leadersText.text = item.Position + " " + item.PlayFabId + " " + item.StatValue;
             Debug.Log(item.Position + " " + item.PlayFabId + " " + item.StatValue );
         }
         
