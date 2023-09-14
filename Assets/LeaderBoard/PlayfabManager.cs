@@ -5,9 +5,14 @@ using PlayFab;
 using PlayFab.ClientModels;
 using System;
 using TMPro;
+using UnityEngine.UI;
 
 public class PlayfabManager : MonoBehaviour
 {
+    [SerializeField] private GameObject leadRow;
+    [SerializeField] private Transform leadRowsParent;
+
+
     [SerializeField] private TextMeshProUGUI clicksText;
     [SerializeField] private TextMeshProUGUI leadersText;
     private int clicksNum = 0;
@@ -80,12 +85,17 @@ public class PlayfabManager : MonoBehaviour
         PlayFabClientAPI.GetLeaderboard(request, OnLeaderBoardGet, OnError);
     }
 
+
     private void OnLeaderBoardGet(GetLeaderboardResult result)
     {
         foreach (var item in result.Leaderboard)
         {
-            leadersText.text = item.Position + " " + item.PlayFabId + " " + item.StatValue;
+            //leadersText.text = item.Position + " " + item.PlayFabId + " " + item.StatValue;
             Debug.Log(item.Position + " " + item.PlayFabId + " " + item.StatValue );
+
+            GameObject newGo = Instantiate(leadRow,leadRowsParent);
+            Text[] texts = newGo.GetComponentsInChildren<Text>();
+
         }
         
     }
